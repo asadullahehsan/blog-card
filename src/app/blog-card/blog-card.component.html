@@ -4,25 +4,22 @@
 >
   <img
     mat-card-image
-    class="w-full"
     src="assets/images/spacejoy-YqFz7UMm8qE-unsplash.jpg"
     alt="Photo of a Living Room"
   />
   <mat-card-content class="px-6 py-4">
-    <div class="px-6 pt-4 pb-2">
+    <div class="pt-4 pb-2">
       <span
-        class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-green-700 mr-2 mb-2"
+        class="inline-block bg-green-100 rounded-full px-3 py-1 text-sm font-semibold text-green-700 mr-2 mb-2"
         >{{ category }}</span
       >
+      <h2 class="font-bold text-xl mb-2">{{ title }}</h2>
+      <p class="text-gray-700 text-base">
+        {{ description }}
+      </p>
     </div>
-    <h2 class="font-bold text-xl mb-2">{{ title }}</h2>
-    <p class="text-gray-700 text-base">
-      {{ description }}
-    </p>
   </mat-card-content>
   <mat-card-actions>
-    <a [href]="linkUrl" class="card-cta"
-      >Read more <span class="arrow">→</span></a
-    >
+    <a [href]="linkUrl" mat-button>Read more <span class="arrow">→</span></a>
   </mat-card-actions>
 </mat-card>
