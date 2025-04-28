@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { BlogCardComponent } from "./blog-card/blog-card.component";
 
 @Component({
   selector: 'app-root',
-  imports: [MatSlideToggleModule,],
+  imports: [BlogCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
