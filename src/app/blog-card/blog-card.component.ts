@@ -9,9 +9,8 @@ import { MatCardModule } from '@angular/material/card';
   styleUrl: './blog-card.component.css',
 })
 export class BlogCardComponent {
-  imageUrl = "assets/images/spacejoy-YqFz7UMm8qE-unsplash.jpg";
-  @Input() category = "Interior";
-  @Input() title = "Top 5 Living Room Inspirations";
-  @Input() description = "Curated vibrants colors for your living, make it pop & calm in the same time.";
-  @Input() linkUrl = "#";
+  category = "Interior";
+  title = "Top 5 Living Room Inspirations";
+  description = "Curated vibrants colors for your living, make it pop & calm in the same time.";
+  linkUrl = "#";  
 }
