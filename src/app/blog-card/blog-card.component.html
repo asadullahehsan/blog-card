@@ -1,25 +1,28 @@
-<mat-card
-  class="max-w-sm rounded overflow-hidden shadow-lg"
-  appearance="outlined"
->
-  <img
-    mat-card-image
-    src="assets/images/spacejoy-YqFz7UMm8qE-unsplash.jpg"
-    alt="Photo of a Living Room"
-  />
-  <mat-card-content class="px-6 py-4">
-    <div class="pt-4 pb-2">
-      <span
-        class="inline-block bg-green-100 rounded-full px-3 py-1 text-sm font-semibold text-green-700 mr-2 mb-2"
-        >{{ category }}</span
-      >
-      <h2 class="font-bold text-xl mb-2">{{ title }}</h2>
-      <p class="text-gray-700 text-base">
-        {{ description }}
-      </p>
-    </div>
-  </mat-card-content>
-  <mat-card-actions>
-    <a [href]="linkUrl" mat-button>Read more <span class="arrow">→</span></a>
-  </mat-card-actions>
-</mat-card>
+<app-layout-wrapper>
+  <mat-card
+    class="w-full rounded overflow-hidden shadow-lg mx-auto max-w-sm"
+    appearance="outlined"
+  >
+    <img
+      mat-card-image
+      src="assets/images/spacejoy-YqFz7UMm8qE-unsplash.jpg"
+      alt="Photo of a Living Room"
+    />
+    <mat-card-content class="px-6 py-4">
+      <div class="pt-4 pb-2">
+        <span
+          class="inline-block bg-green-100 rounded-full px-3 py-1 text-sm font-semibold text-green-700 mr-2 mb-2"
+          >{{ category }}</span
+        >
+        <h2 class="font-bold text-xl mb-2">{{ title }}</h2>
+        <p class="text-gray-700 text-base">
+          {{ description }}
+        </p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <a [href]="linkUrl" mat-button>Read more <span class="arrow">→</span></a>
+    </mat-card-actions>
+  </mat-card>
+</app-layout-wrapper>
+<!-- max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl -->
